@@ -2,7 +2,7 @@
 Bu proje aiohttp ve asyncio kullanarak Senkron veya Asenkron methodlarıyla belirtilen IP adresine veya Domaine DDoS testi yapmaya yarar.
 
 
-## Önerile Sistem Gereksinimleri
+## Önerilen Sistem Gereksinimleri
 
 - Python: 3.9.18
 - Bellek: 2 GB (Yanlızca bu projeye ayrılan bellek boyutu)
