@@ -5,7 +5,7 @@ Bu proje aiohttp ve asyncio kütüphanelerini Senkron veya Asenkron methodlarıy
 ## Önerile Sistem Gereksinimleri
 
 - Python: 3.9.18
-- Bellek: 2 GB (Sadece bu projeye ayrılan bellek boyutu)
+- Bellek: 2 GB (Yanlızca bu projeye ayrılan bellek boyutu)
 
 
 ## Kurulum
