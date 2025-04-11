@@ -57,11 +57,11 @@ tasks = []
 concurrency = 8000  # En yüksek eşzamanlı görev sayısı
 ```
 
----
+-
 
 *Node.js K6 versiyonunu repolarımda bulabilirsiniz. Bu methoddan kat kat daha güçlüdür.*
 
----
+-
 
 # ⚠️ ÖNEMLİ UYARI:
 Bu proje sunucu altyapılarının dayankıklılığını test etmek için oluşturulmuştur. Kullanıcı tarafından yapılan herhangi bir yasadışı saldırıdan tarafımız sorumlu değildir!
