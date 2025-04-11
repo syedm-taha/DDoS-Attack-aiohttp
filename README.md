@@ -5,7 +5,7 @@ Bu proje aiohttp ve asyncio kullanarak Senkron veya Asenkron methodlarıyla beli
 ## Önerilen Sistem Gereksinimleri
 
 - Python: 3.9.18
-- Bellek: 2 GB (Yanlızca bu projeye ayrılan bellek boyutu)
+- Bellek: 2 GB (Sadece bu projeye ayrılan bellek boyutu)
 
 
 ## Kurulum
@@ -39,7 +39,7 @@ poetry run python main.py
 
 ## Bilgilendirme
 
-Projede Senkron methodu için 4000 thread, Asenkron methodu için 8000 en yüksek eş zamanlı iş parçacığı ayarlanmıştır. Bu değerleri ihtiyacınıza göre ayarlayabilirsiniz. Daha yüksek değerler DDoS gönderilen hedefi daha fazla strese sokar fakat çok daha fazla bellek tüketir. Değerli ayarlamak için main.py dosyasında belirtilmiş alanları değişirebilirsiniz.
+Projede Senkron methodu için 4000 thread, Asenkron methodu için 8000 en yüksek eş zamanlı iş parçacığı ayarlanmıştır. Bu değerleri ihtiyacınıza göre ayarlayabilirsiniz. Daha yüksek değerler DDoS gönderilen hedefi daha fazla strese sokar fakat çok daha fazla bellek tüketir. Değerleri ayarlamak için main.py dosyasında belirtilmiş alanları değişirebilirsiniz.
 
 *Senkron İçin Thread Sayısı*
 ```python
