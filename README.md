@@ -57,7 +57,7 @@ tasks = []
 concurrency = 8000  # En yüksek eşzamanlı görev sayısı
 ```
 
-*Node.js K6 versiyonunu depolarımda bulabilirsiniz. Bu methoddan kat kat daha güçlüdür.*
+*Node.js K6 versiyonunu repolarımda bulabilirsiniz. Bu methoddan kat kat daha güçlüdür.*
 
 
 
