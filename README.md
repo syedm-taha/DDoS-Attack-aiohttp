@@ -39,7 +39,7 @@ poetry run python main.py
 
 ## Bilgilendirme
 
-Projede Senkron methodu için 4000 thread, Asenkron methodu için 8000 en yüksek eş zamanlı iş parçacığı ayarlanmıştır. Bu değerleri ihtiyacınıza göre ayarlayabilirsiniz. Daha yüksek değerler DDoS gönderilen hedefe daha çok zarar verir fakat çok daha fazla bellek tüketir. Değerli ayarlamal için main.py dosyasında belirtilmiş alanlari değişirebilirsiniz.
+Projede Senkron methodu için 4000 thread, Asenkron methodu için 8000 en yüksek eş zamanlı iş parçacığı ayarlanmıştır. Bu değerleri ihtiyacınıza göre ayarlayabilirsiniz. Daha yüksek değerler DDoS gönderilen hedefi daha fazla strese sokar fakat çok daha fazla bellek tüketir. Değerli ayarlamal için main.py dosyasında belirtilmiş alanlari değişirebilirsiniz.
 
 *Senkron İçin Thread Sayısı*
 ```python
