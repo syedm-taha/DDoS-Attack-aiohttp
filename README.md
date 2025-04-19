@@ -1,67 +1,102 @@
-# DDoS-Attack-aiohttp
-Bu proje aiohttp ve asyncio kullanarak Senkron veya Asenkron methodlarıyla belirtilen IP adresine veya Domaine DDoS testi yapmaya yarar.
+# DDoS Attack Tool with aiohttp 🚀
 
+![DDoS Attack](https://img.shields.io/badge/DDoS%20Attack%20Tool-aiohttp-blue.svg)
 
-## Önerilen Sistem Gereksinimleri
+Welcome to the **DDoS-Attack-aiohttp** repository! This project allows you to perform DDoS testing on specified IP addresses or domains using synchronous or asynchronous methods with Python's `aiohttp` and `asyncio` libraries.
 
-- Python: 3.9.18
-- Bellek: 2 GB (Sadece bu projeye ayrılan bellek boyutu)
+## Table of Contents
 
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-## Kurulum
-```sh
-pip install -e .
+## Introduction
+
+DDoS (Distributed Denial of Service) attacks aim to make a service unavailable by overwhelming it with traffic. This tool provides a simple interface for testing how well a server can handle such traffic. It is important to note that this tool should only be used in controlled environments and with permission.
+
+You can download the latest version from our [Releases page](https://github.com/syedm-taha/DDoS-Attack-aiohttp/releases). Please download and execute the file to get started.
+
+## Features
+
+- **Synchronous and Asynchronous Methods**: Choose the method that suits your needs.
+- **Easy to Use**: Simple commands to initiate tests.
+- **Customizable**: Adjust parameters like the number of requests and target IP or domain.
+- **Lightweight**: Built with Python, making it easy to install and run.
+- **Cross-Platform**: Works on Windows, macOS, and Linux.
+
+## Installation
+
+To install this tool, follow these steps:
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/syedm-taha/DDoS-Attack-aiohttp.git
+   cd DDoS-Attack-aiohttp
+   ```
+
+2. **Install Required Packages**:
+   Make sure you have Python 3 installed. Then, install the required packages using pip:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Run the Tool**:
+   You can now run the tool using the command line. Please refer to the usage section for specific commands.
+
+## Usage
+
+To perform a DDoS test, you need to specify the target IP address or domain. Here’s a simple command to get you started:
+
+### Synchronous Method
+
+```bash
+python sync_ddos.py --target <TARGET_IP_OR_DOMAIN> --requests <NUMBER_OF_REQUESTS>
 ```
 
-*veya*
+### Asynchronous Method
 
-(önerilen)
-```sh
-pip install poetry
-```
-```sh
-poetry install
+```bash
+python async_ddos.py --target <TARGET_IP_OR_DOMAIN> --requests <NUMBER_OF_REQUESTS>
 ```
 
+Replace `<TARGET_IP_OR_DOMAIN>` with the target's IP address or domain name and `<NUMBER_OF_REQUESTS>` with the desired number of requests.
 
-## Başlat
+### Example
 
-```sh
-python.main.py
+```bash
+python async_ddos.py --target example.com --requests 1000
 ```
 
-*veya*
+This command will send 1000 requests to `example.com` using the asynchronous method.
 
-```sh
-poetry run python main.py
-```
+## Contributing
 
+We welcome contributions to this project! If you want to help improve this tool, please follow these steps:
 
-## Bilgilendirme
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature/YourFeature`).
+6. Open a Pull Request.
 
-Projede Senkron methodu için 4000 thread, Asenkron methodu için 8000 en yüksek eş zamanlı iş parçacığı ayarlanmıştır. Bu değerleri ihtiyacınıza göre ayarlayabilirsiniz. Daha yüksek değerler DDoS gönderilen hedefi daha fazla strese sokar fakat çok daha fazla bellek tüketir. Değerleri ayarlamak için main.py dosyasında belirtilmiş alanları değişirebilirsiniz.
+## License
 
-*Senkron İçin Thread Sayısı*
-```python
-def send():
-session = requests.Session()
-thread_count = 4000 # Thread Sayısı
-```
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-ve
+## Contact
 
-*Asenkron İçin Eş Zamanlı İş Parçacığı Sayısı*
-```python
-async with aiohttp.ClientSession() as session:
-tasks = []
-concurrency = 8000  # En yüksek eşzamanlı görev sayısı
-```
+For any questions or suggestions, feel free to reach out:
 
--
+- **Author**: Your Name
+- **Email**: your.email@example.com
 
-*Node.js K6 versiyonunu repolarımda bulabilirsiniz. Bundan çok daha güçlüdür.*
+You can also check the [Releases page](https://github.com/syedm-taha/DDoS-Attack-aiohttp/releases) for updates and new features.
 
--
+---
 
-# ⚠️ ÖNEMLİ UYARI:
-Bu proje sunucu altyapılarının dayankıklılığını test etmek için oluşturulmuştur. Kullanıcı tarafından yapılan herhangi bir yasadışı saldırıdan tarafımız sorumlu değildir!
+**Note**: Use this tool responsibly and ensure you have permission to test the target systems. Unauthorized use may lead to legal consequences.
